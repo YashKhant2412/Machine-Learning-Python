@@ -48,7 +48,7 @@ X_test = sc_X.transform(X_test)
 
 #Fitting Classifier
 from sklearn.svm import SVC
-classifier = SVC(kernel='rbf',random_state=0)
+classifier = SVC(kernel='linear',random_state=0)
 classifier.fit(X_train,y_train)
 
 #predict on test set
