@@ -50,7 +50,7 @@ plt.ylim(X2.min(),X2.max())
 for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set==j,0],X_set[y_set==j,1],
                 c = ListedColormap(('orange','yellow'))(i), label = j)
-plt.title("Naive Base Classifier (TRAIN SET)")
+plt.title("Decision Tree Classifier (TRAIN SET)")
 plt.xlabel("Age")
 plt.ylabel('Salary')
 plt.legend()
@@ -69,7 +69,7 @@ plt.ylim(X2.min(),X2.max())
 for i, j in enumerate(np.unique(y_set)):
     plt.scatter(X_set[y_set==j,0],X_set[y_set==j,1],
                 c = ListedColormap(('orange','yellow'))(i), label = j)
-plt.title("Naive Base Classifier (TEST SET)")
+plt.title("Decision Tree Classifier (TEST SET)")
 plt.xlabel("Age")
 plt.ylabel('Salary')
 plt.legend()
