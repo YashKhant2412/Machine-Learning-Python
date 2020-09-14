@@ -37,6 +37,11 @@ y_pred = classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm = confusion_matrix(y_test,y_pred)
 
+#Plot Decision Tree
+fig = plt.figure(figsize=(25,20))
+_ = tree.plot_tree(classifier,filled=True)
+plt.savefig('abc.pdf')
+plt.show()
 
 #Visulization on Training result
 from matplotlib.colors import ListedColormap
