@@ -27,7 +27,7 @@ classifier.add(MaxPooling2D(pool_size=(2,2)))
 
 
 #Flattening
-classifier.add(Flatten())
+classifier.add(Flatten()) 
 
 #Full Connection
 classifier.add(Dense(units = 128,activation='relu', kernel_initializer='uniform'))
